@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Sale Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        /* Outer white circle */
+        .outer-circle {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        /* Inner black circle */
+        .inner-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Text inside the inner black circle */
+        .inner-circle .discount {
+            font-size: 64px;
+            margin: 0;
+        }
+
+        /* Text in the white outer circle */
+        .outer-circle .text-top,
+        .outer-circle .text-bottom {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: black;
+            letter-spacing: 3px;
+        }
+
+        .outer-circle .text-top {
+            top: 30px;
+        }
+
+        .outer-circle .text-bottom {
+            bottom: 30px;
+        }
+
+        .text-box {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            line-height: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 5px 10px;
+            font-size: 14px;
+            transform: rotate(-90deg);
+        }
+
+        .top-center {
+            top: 10px;
+            left: 35%;
+            transform: translateX(-50%);
+            transform: rotate(0deg);
+        }
+
+        .bottom-center {
+            bottom: 10px;
+            left: 35%;
+            transform: translateX(-50%);
+            transform: rotate(0deg);
+        }
+
+        .left-center {
+    top: 50%;
+    left: -50px; /* Increase this value to move the text further left */
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.right-center {
+    top: 50%;
+    right: -50px; /* Increase this value to move the text further right */
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpeg" alt="Background" class="background-image">
+        <div class="overlay">
+            <div class="text-box top-center">samplewebsite.com</div>
+            <div class="text-box bottom-center">samplewebsite.com</div>
+            <div class="text-box left-center">samplewebsite.com</div>
+            <div class="text-box right-center">samplewebsite.com</div>
+
+            <div class="outer-circle">
+                <div class="text-top">FLASH</div>
+                <div class="inner-circle">
+                    <div class="discount">99%</div>
+                    <div>off</div>
+                </div>
+                <div class="text-bottom">SALE</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

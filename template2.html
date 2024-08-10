@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Sale</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .flash-sale-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #B907C0; /* Background color */
+    background-image: url('./backgroundimage.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; /* Blend the color with the image */
+    color: #FFFA0D; /* Text color */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+        .promo-banner {
+            position: absolute;
+            top: 10px;
+            left:50%;
+            color:white; /* Text color */
+            font-weight: bold;
+            font-size: 30px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 250px;
+            transform: rotate(10deg); /* Rotate the container 10 degrees to the right */
+            transform-origin: center;
+            
+        }
+        .sale-text {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            background-color: #FFFA0D; 
+            color: #B907C0; /* Text color */
+            font-size: 50px;
+            font-weight: bold;
+            padding: 10px 20px;
+            
+            width: 300px;
+            transform: rotate(10deg); /* Rotate the container 10 degrees to the right */
+            transform-origin: center;
+        }
+        .discount-text {
+            position: absolute;
+            top: 260px;
+            left: 30px;
+             /* Background color for the text */
+            color: white; /* Text color */
+            font-size: 60px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .website-text {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background-color: #FFFA0D; /* Background color for the text */
+            color: #B907C0; /* Text color */
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .image-container {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 200px;
+            height: 250px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .sale-text-2{
+            position: absolute;
+            top: 150px;
+            left: 30px;
+            background-color: #FFFA0D; 
+            color: #B907C0; /* Text color */
+            font-size: 70px;
+            font-weight: bold;
+            padding: 10px 20px;
+            width: 300px;
+            transform: rotate(-10deg); /* Rotate the container 10 degrees to the right */
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flash-sale-container">
+        <div class="promo-banner">3 Days Only</div>
+        <div class="sale-text">FLASH </div>
+        <div class="sale-text-2">SALE</div>
+        <div class="discount-text">45%<br/>OFF</div>
+        <div class="website-text">samplewebsite.com</div>
+        <div class="image-container">
+            <img src="image2.jpeg" alt="Flash Sale Image">
+        </div>
+    </div>
+</body>
+</html>
